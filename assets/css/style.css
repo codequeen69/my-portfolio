@@ -7,12 +7,14 @@ body {
     background-color: dimgrey;
     height: 100vh;
 }   
+/* Header Style Start*/
 header {
     background-color: thistle;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
+    height: 70px;
+
 }
 header h1 a {
     font-weight: bold;
@@ -20,8 +22,12 @@ header h1 a {
     text-decoration: none;
     color: black;
 }
+header h1 a:hover {
+    background-color: dimgrey;
+    padding: .5px;
+}
 header nav {
-    margin: 7px 0;
+    margin: 15px 0;
 }
 
 header nav ul {
@@ -36,7 +42,134 @@ header nav ul a {
     text-decoration: none;
     color: black;
 }
+header nav ul a:hover {
+    background-color: dimgrey;
+    padding: 2px;
+}
+/* Header Style End*/
 
+/* Hero Section Start*/
+.hero {
+    background-image: url("../images/pexels-nico-becker-5913653.jpg");
+    background-size: cover;
+    background-position: 90%;
+}
+.hero h2 {
+    font-size: 50px;
+    text-align: center;
+    background:none;
+}
+/* Hero Section End*/
+
+/* About Me Section Start*/
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-me h2 {
+    font-size: 40px;
+    border-right: 3px solid thistle;
+    height: 300px;
+    padding: 20px
+}
+.about-me img {
+    border-radius: 50%;
+    padding: 30px;
+}
+.about-me p {
+    font-size: 25px;
+    line-height: 1.5;
+    padding: 30px;
+}
+.me {
+    display: flex;
+    justify-content:;
+    align-items:center;
+    border-left: 3px solid thistle;
+}
+
+section {
+    padding: 50px;
+}
+/* About Me Section End*/
+
+/* My Work Section Start*/
+.my-work {
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+} 
+.my-work h2 {
+    font-size: 40px;
+    border-right: 3px solid thistle;
+    height:400px;
+    padding: 20px;
+
+}
+    
+.card-1 {
+    border: 3px solid thistle;
+    position:absolute;
+    top:0 
+}
+.card-1 img {
+    filter: grayscale(100%);
+    width: 600px;
+    height: 400px;
+    
+}
+.card a h3 {
+    position: ;
+    max-width: ;
+}
+.card a, h3 {
+    font-size: 25px;
+    color: thistle;
+    text-decoration: none;
+}
+.cards img {
+    height:400px;
+    width: 200px;
+}
+.cards {
+    border: 3px solid thistle;
+    margin: 10px;
+   
+}
+/* My Work Section End*/
+
+/* Contact Me Section Start*/
+.contact-me {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-me h2 {
+    font-size: 40px;
+    border-right: 3px solid thistle;
+    height: 200px;
+    padding: 20px
+}
+.contact-me ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact-me a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px;
+    color: thistle;
+}
+    
+/* Contact Me Section End*/
+
+/* Footer Style Start */
 footer {
     display:flex;
     justify-content: space-between;
@@ -53,27 +186,4 @@ footer h2 {
 footer div{
 
 }
-section {
-    padding: 50px;
-}
-.hero {
-    background-image: url("../images/pexels-nico-becker-5913653.jpg");
-    background-size: cover;
-    background-position: 80%;
-}
-.hero h2 {
-    font-size: 50px;
-    text-align: center;
-    background:none;
-}
-.contact-me {
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.card img {
-    height: 500px;
-    width: 300px;
-    filter: grayscale (100%);
-}
+/* Footer Style End*/
