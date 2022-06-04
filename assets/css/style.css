@@ -1,0 +1,79 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+    background-color: dimgrey;
+    height: 100vh;
+}   
+header {
+    background-color: thistle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+}
+header h1 a {
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul a {
+    padding: 10px 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: thistle;
+    width: 100%;
+    padding: 30px;
+}
+footer h2 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+}
+footer div{
+
+}
+section {
+    padding: 50px;
+}
+.hero {
+    background-image: url("../images/pexels-nico-becker-5913653.jpg");
+    background-size: cover;
+    background-position: 80%;
+}
+.hero h2 {
+    font-size: 50px;
+    text-align: center;
+    background:none;
+}
+.contact-me {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card img {
+    height: 500px;
+    width: 300px;
+    filter: grayscale (100%);
+}

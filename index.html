@@ -5,11 +5,11 @@
     <title>Camille's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
- <body>
+    <body>
      <!--Navigation-->
-    <header>
+     <header>
         <h1>
-           <a href="/">Camille's Portfolio</a>
+           <a href="#">Camille's Portfolio</a>
         </h1>
         <!--Navigation Bar-->
         <nav>
@@ -26,29 +26,64 @@
             </ul>
         </nav>
     </header>
+    <section class="hero">
+        <h2>Welcome</h2>
+    </section>
+
     <!--about me section-->
-    <section id="about-me">
+    <section class="about-me">
 <h2>About Me</h2>
-<img src="./assets/images/profile.jpg" alt="Camille Howe posed and ready for that coding job offer" />
+<img src="./assets/images/profile.jpg" alt="Camille Howe looking poised and ready for that coding job offer" />
 <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero minima iste optio qui commodi dolorum ducimus aliquid placeat eaque maiores, itaque ullam laboriosam corrupti. Sed pariatur unde deleniti veritatis quibusdam?
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos illo quasi ipsam, rerum modi recusandae nesciunt impedit earum iusto explicabo. Doloribus officia similique recusandae laboriosam, quis enim omnis aperiam!
 </p>
     </section>
 <!--my work section-->
-    <section id="my-work">
+    <section class="my-work">
         <h2>My Work</h2>
-        <h3>Run Buddy</h3>
-        <h3>LED Wall</h3>
-        <h3>Horiseon Refactor</h3>
-        <h3>Calculator</h3>
+        <div class="card">
+        <a href="https://codequeen69.github.io/run-buddy/">
+            <h3>Run Buddy</h3> 
+            <p>HTML/ CSS</p>
+            <img src="./assets/images/run-buddy.png" alt="A picture of the Run Buddy website" />    
+            </a>   
+        </div>
+        <div class="card">
+        <a href="https://www.linkedin.com/in/camille-howe-66565b195/" >
+            <h3>LED Wall</h3>
+            <p>Node/ IoT</p>
+            <img src="./assets/images/pexels-zack-jarosz-1727658.jpg" alt="" />
+        </a>
+        </div>
+        <div class="card">
+        <a href="https://www.linkedin.com/in/camille-howe-66565b195/">
+            <h3>Surf Report<h3>
+                <p> MERN Stack</p>
+                <img src="./assets/images/pexels-zack-jarosz-1727658.jpg" alt="" />
+            </a>
+        </div>
+        <div class="card">
+        <a href="https://github.com/codequeen69">
+            <h3>Calculator</h3>
+            <p>React/ Javascript/ CSS</p>
+            <img src="./assets/images/pexels-zack-jarosz-1727658.jpg" alt="" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://open.spotify.com/user/crhowe90">
+                <h3>Pastel Puzzels</h3>
+                <p>MERN Stack</p>
+                <img src="./assets/images/pexels-zack-jarosz-1727658.jpg" alt="" />
+            </a>
+        </div>
     </section>
 <!--contact me section-->
-    <Section id="contact-me">
+    <Section class="contact-me">
      <h2>Contact Me</h2>
      <ul>
         <li>
-        <phone>608.469.0863</phone>
+        <a href="tel:608-469-0863">608.469.0863</a>
         </li>
         <li>
             <a href="mailto:crhowe90@gmail.com">crhowe90@gmail.com</a>
@@ -60,13 +95,13 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quos illo quasi 
            <a href="https://open.spotify.com/user/crhowe90" >Spotify</a>
         </li>
      </ul>
-
     </Section>
-
     <!-- footer -->
     <footer>
         <h2>Thanks For Stopping By! <span class="wave">👋</span></span></h2>
+        <div>
         &copy; 2022 Camille Howe
+        </div>
     </footer>
  </body>
 </html>
