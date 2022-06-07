@@ -71,7 +71,8 @@ header nav ul a:hover {
     font-size: 40px;
     border-right: 3px solid thistle;
     height: 300px;
-    padding: 20px
+    padding: 20px;
+    width: 90%;
 }
 .about-me img {
     border-radius: 50%;
@@ -82,44 +83,42 @@ header nav ul a:hover {
     line-height: 1.5;
     padding: 30px;
 }
-.me {
-    display: flex;
-    justify-content:;
-    align-items:center;
-    border-left: 3px solid thistle;
-}
 
 section {
-    padding: 50px;
+    padding: 75px;
 }
 /* About Me Section End*/
 
 /* My Work Section Start*/
 .my-work {
     display:flex;
-    justify-content:space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
 } 
 .my-work h2 {
     font-size: 40px;
     border-right: 3px solid thistle;
     height:400px;
     padding: 20px;
-
+    width: 20%;
+}
+.projects-parent {
+    display: flex;
+    justify-content: center;
+    width: 80%
 }
     
 .card-1 {
     border: 3px solid thistle;
-    position:absolute;
-    top:0 
+    top:0 ;
+    background-image: url(../images/run-buddy.png);
+    filter:grayscale(100%);
+    background-size: cover;
+    position:relative;
+    height: 300px;
 }
-.card-1 img {
-    filter: grayscale(100%);
-    width: 600px;
-    height: 400px;
-    
+.card-1 a {
+    position:absolute;
+    left:0;
+    bottom:0;
 }
 .card a h3 {
     position: ;
@@ -137,7 +136,10 @@ section {
 .cards {
     border: 3px solid thistle;
     margin: 10px;
-   
+}
+.row {
+    display: flex;
+    width: 100%;
 }
 /* My Work Section End*/
 
@@ -152,7 +154,8 @@ section {
     font-size: 40px;
     border-right: 3px solid thistle;
     height: 200px;
-    padding: 20px
+    padding: 20px;
+    width: 20%;
 }
 .contact-me ul {
     display: flex;
