@@ -2,32 +2,38 @@
     margin:0;
     padding:0;
 }
+:root{
+    --primary-color: #696969;
+    --secondary-color: #d8bfd8;
+    --tertiary-color: #000000; 
+}
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
-    background-color: dimgrey;
+    background-color: var(--primary-color);
     height: 100vh;
 }   
 /* Header Style Start*/
 header {
-    background-color: thistle;
+    background-color: var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 70px;
-
 }
 header h1 a {
     font-weight: bold;
     font-size: 40px;
     text-decoration: none;
-    color: black;
+    color: var(--tertiary-color);
+    line-height: 65px;
+    padding: 10px;
 }
 header h1 a:hover {
-    background-color: dimgrey;
-    padding: .5px;
+    background-color: var(--primary-color);
+    padding: 5px;
 }
 header nav {
-    margin: 15px 0;
+    margin: 15px 10px;
 }
 
 header nav ul {
@@ -40,10 +46,10 @@ header nav ul a {
     padding: 10px 15px;
     font-size: 30px;
     text-decoration: none;
-    color: black;
+    color: var(--tertiary-color);
 }
 header nav ul a:hover {
-    background-color: dimgrey;
+    background-color: var(--primary-color);
     padding: 2px;
 }
 /* Header Style End*/
@@ -62,17 +68,20 @@ header nav ul a:hover {
 /* Hero Section End*/
 
 /* About Me Section Start*/
-.about-me {
+.bio{
+    display:flex;
+}
+.me {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .about-me h2 {
     font-size: 40px;
-    border-right: 3px solid thistle;
+    border-right: 3px solid var(--secondary-color);
     height: 300px;
     padding: 20px;
-    width: 90%;
+    width: 70%;
 }
 .about-me img {
     border-radius: 50%;
@@ -95,7 +104,7 @@ section {
 } 
 .my-work h2 {
     font-size: 40px;
-    border-right: 3px solid thistle;
+    border-right: 3px solid var(--secondary-color);
     height:400px;
     padding: 20px;
     width: 20%;
@@ -105,28 +114,25 @@ section {
     justify-content: center;
     width: 80%
 }
-    
 .card-1 {
-    border: 3px solid thistle;
-    top:0 ;
-    background-image: url(../images/run-buddy.png);
+    border: 3px solid var(--secondary-color);
     filter:grayscale(100%);
+    background-image: url(../images/run-buddy.png);
     background-size: cover;
-    position:relative;
     height: 300px;
+}
+.card-1:hover {
+    background-color: var(--secondary-color);
 }
 .card-1 a {
     position:absolute;
     left:0;
     bottom:0;
-}
-.card a h3 {
-    position: ;
-    max-width: ;
+    
 }
 .card a, h3 {
     font-size: 25px;
-    color: thistle;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 .cards img {
@@ -134,8 +140,12 @@ section {
     width: 200px;
 }
 .cards {
-    border: 3px solid thistle;
-    margin: 10px;
+    border: 3px solid var(--secondary-color);
+    margin: 20px;
+    padding: 15px;
+}
+.cards:hover{
+    background-color: var(--secondary-color);
 }
 .row {
     display: flex;
@@ -152,7 +162,7 @@ section {
 }
 .contact-me h2 {
     font-size: 40px;
-    border-right: 3px solid thistle;
+    border-right: 3px solid var(--secondary-color);
     height: 200px;
     padding: 20px;
     width: 20%;
@@ -167,9 +177,13 @@ section {
     text-decoration: none;
     font-size: 30px;
     padding: 30px;
-    color: thistle;
+    color:var(--secondary-color);
 }
-    
+.contact-me li a:hover {
+    background-color: var(--secondary-color);
+    color:var(--tertiary-color);
+    padding: 10px 30px;
+}
 /* Contact Me Section End*/
 
 /* Footer Style Start */
@@ -177,16 +191,59 @@ footer {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: thistle;
-    width: 100%;
+    background: var(--secondary-color);
     padding: 30px;
 }
 footer h2 {
-    color: black;
+    color: var(--tertiary-color);
     font-size: 30px;
     margin: 0;
 }
 footer div{
-
+    line-height: 40px;
 }
+
 /* Footer Style End*/
+
+/*Media Query for smaller desktop screens*/
+@media screen and ( max-width:980px) {
+header{ 
+    width:100%;
+}
+.bio{
+    flex-wrap: wrap;
+}
+.about-me h2 {
+    border-bottom: 3px solid var(--secondary-color);
+    border-right: none;
+    height:auto;
+    margin:30px;
+}
+.me{
+    display:flex;
+}
+    
+
+.my-work{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-work h2{
+    border-right:none;
+    border-bottom: 3px solid var(--secondary-color);
+    height:auto;
+    width:100%;
+    margin: 40px;
+}
+.contact-me h2{
+    border-right: none;
+    border-bottom: 3px solid var(--secondary-color);
+    height: auto;
+    width: 100%;
+    margin: 30px;
+}
+}
