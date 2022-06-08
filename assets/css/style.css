@@ -121,8 +121,8 @@ section {
     background-size: cover;
     height: 300px;
 }
-.card-1:hover {
-    background-color: var(--secondary-color);
+.card-1 h3:hover {
+    background-color: var(--primary-color);
 }
 .card-1 a {
     position:absolute;
@@ -207,9 +207,6 @@ footer div{
 
 /*Media Query for smaller desktop screens*/
 @media screen and ( max-width:980px) {
-header{ 
-    width:100%;
-}
 .bio{
     flex-wrap: wrap;
 }
@@ -223,7 +220,6 @@ header{
     display:flex;
 }
     
-
 .my-work{
     flex-wrap: wrap;
     justify-content: center;
@@ -247,3 +243,49 @@ header{
     margin: 30px;
 }
 }
+/*Smaller desktop screens end*/
+ /*Media Queries for tablet and smaller*/
+
+@media screen and (max-width: 768px){
+  header{
+      justify-content: center;
+      height: 100px;
+      width:100%;
+      padding:35px 50px;
+  }
+  .hero{
+      width:100%;
+      padding:35px 50px;
+  }
+  header nav ul li a{
+      max-width: 100%;
+  }
+  .me {
+      flex-direction: column;
+      justify-content: center;
+  }
+  .contact-me ul{
+      display: flex;
+      justify-content: center;
+  }
+  footer{
+      width: 100%;
+      padding: 35px 50px;
+  }
+  section{
+      padding: 25px 0px;
+      margin:0;
+  }
+  }
+  /*For Mobile screens and smaller*/
+  @media screen and (max-width:575px){
+      header{
+          max-width:100%;
+      }
+.me{
+    justify-content: center;
+}
+.my-work{
+    justify-content: center;
+}
+  }
