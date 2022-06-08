@@ -244,6 +244,7 @@ footer div{
 }
 }
 /*Smaller desktop screens end*/
+
  /*Media Queries for tablet and smaller*/
 
 @media screen and (max-width: 768px){
@@ -264,6 +265,9 @@ footer div{
       flex-direction: column;
       justify-content: center;
   }
+  .bio p{
+      font-size: 35px;
+  }
   .contact-me ul{
       display: flex;
       justify-content: center;
@@ -277,15 +281,15 @@ footer div{
       margin:0;
   }
   }
+  /*Tablet and smaller end*/
+  
   /*For Mobile screens and smaller*/
   @media screen and (max-width:575px){
-      header{
-          max-width:100%;
-      }
-.me{
-    justify-content: center;
-}
-.my-work{
-    justify-content: center;
+ header, .hero, footer{
+     padding: 35px 150px;
+ }
+.bio p{
+    font-size: 30px;
 }
   }
+  /* Mobile screens end*/
