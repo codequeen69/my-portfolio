@@ -7,7 +7,7 @@ I built this Portfolio with future employers in mind. The portfolio has three se
 *CSS
 
 ## Screenshot
-![](images/screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/104512547/172721579-65bd5d6f-3acb-4ba6-9dc9-34ce47935e6a.png)
 
 ## Contribution
 Made by Camille Howe
